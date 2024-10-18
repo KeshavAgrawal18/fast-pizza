@@ -21,8 +21,7 @@ function MenuItem({ pizza }) {
 
   return (
     <li className="flex flex-row space-x-4 py-2">
-      <img src="https://tse1.mm.bing.net/th?id=OIP.HVnpXNaDOR880P-_ldJEoQHaFj&pid=Api&P=0&h=180" className={`h-24 ${soldOut ? 'opacity-70 grayscale' : ''}`} alt={name} />
-      {/* <img src={imageUrl} className={`h-24 ${soldOut ? 'opacity-70 grayscale' : ''}`} alt={name} /> */}
+      <img src={imageUrl} className={`h-24 ${soldOut ? 'opacity-70 grayscale' : ''}`} alt={name} />
       <div className="grow">
         <p className=" font-bold">{name}</p>
         <p className="text-sm capitalize italic">{ingredients.join(', ')}</p>
